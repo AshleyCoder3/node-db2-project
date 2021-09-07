@@ -1,5 +1,7 @@
+const db = require('../../data/db-config');
+
 const getAll = () => {
-  return 'getAll';
+  return db('cars');
 };
 
 const getById = () => {
