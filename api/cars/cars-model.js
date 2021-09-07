@@ -1,11 +1,17 @@
 const getAll = () => {
-  // DO YOUR MAGIC
-}
+  return 'getAll';
+};
 
 const getById = () => {
-  // DO YOUR MAGIC
-}
+  return 'getById';
+};
 
 const create = () => {
-  // DO YOUR MAGIC
-}
+  return 'create';
+};
+
+module.exports = {
+  getAll,
+  getById,
+  create
+};
