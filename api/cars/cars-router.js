@@ -20,9 +20,10 @@ router.post('/',
     checkCarPayload,
     checkVinNumberValid,
     checkVinNumberUnique,
-    (req, res, next) => {
+    async (req, res, next) => {
         try {
-            res.json('POST is Working');
+            const newCar = await Car.create(req.body);
+            res.json(newCar);
         } catch (err) {
             next(err);
         }

@@ -34,7 +34,7 @@ The critical information for each car is the vin, make, model, and mileage. They
 <!-- 
   - `getAll` resolves to an array of car records (or an empty array) -->
   <!-- - `getById` resolves to a car record by the given id -->
-  - `create` resolves to the newly created car record
+  <!-- - `create` resolves to the newly created car record -->
 
 #### Write Middleware
 
@@ -45,8 +45,8 @@ The critical information for each car is the vin, make, model, and mileage. They
   <!-- - `checkCarPayload` returns a status 400 with a `{ message: "<field name> is missing" }` if any required field is missing. -->
 
   <!-- - `checkVinNumberValid` returns a status 400 with a `{ message: "vin <vin number> is invalid" }` if the vin number is [invalid](https://www.npmjs.com/package/vin-validator). -->
-
-  - `checkVinNumberUnique` returns a status 400 with a `{ message: "vin <vin number> already exists" }` if the vin number already exists in the database.
+<!-- 
+  - `checkVinNumberUnique` returns a status 400 with a `{ message: "vin <vin number> already exists" }` if the vin number already exists in the database. -->
 
 ### Write a Cars API
 
@@ -54,7 +54,7 @@ The critical information for each car is the vin, make, model, and mileage. They
 <!-- 
   - `[GET] /api/cars` returns an array of cars sorted by id (or an empty array if there aren't any). -->
   <!-- - `[GET] /api/cars/:id` returns a car by the given id. -->
-  - `[POST] /api/cars` returns the created car.
+  <!-- - `[POST] /api/cars` returns the created car. -->
 
 - Manually test your endpoints with a REST client like `Insomnia` or `Postman` to check they are working as expected.
 - Test your endpoints automatically by running `npm test`.
