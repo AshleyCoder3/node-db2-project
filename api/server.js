@@ -10,7 +10,7 @@ server.use('/api/cars', carsRouter);
 server.use((err, req, res, next) => {
     res.status(err.status || 500).json({
         message: err.message,
-        devMessage: 'Something bad inside the server!'
+        devMessage: 'Something bad Happened!'
     });
 });
 

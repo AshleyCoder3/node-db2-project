@@ -12,12 +12,8 @@ router.get('/', async (req, res, next) => {
     }
 });
 
-router.get('/:id', checkCarId, (req, res, next) => {
-    try {
-        res.json('GET id is Working');
-    } catch (err) {
-        next(err);
-    }
+router.get('/:id', checkCarId, (req, res) => {
+    res.json(req.carId);
 });
 
 router.post('/',
